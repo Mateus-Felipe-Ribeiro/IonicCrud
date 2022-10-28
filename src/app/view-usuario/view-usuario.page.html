@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="Usuarios()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-buttons>
+    <ion-title>Dados do usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="card">
+    <div class="card-title mt-2" style="color: black;">
+      <div class="row justify-content-center">
+        <div class="col-4 text-alignment-center">
+            Usuario ID: {{id}}
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row align-items-start">
+        <div class="col-md-3">
+          <label style="color: black;">Nome:</label>
+          <input class="form-control" value="{{nome}}" readonly/>
+        </div>
+        <div class="col-md-3">
+          <label style="color: black;">CPF:</label>
+          <input class="form-control" value="{{cpf}}" readonly/>
+        </div>
+        <div class="col-md-3">
+          <label style="color: black;">E-mail:</label>
+          <input class="form-control" value="{{email}}" readonly/>
+        </div>
+      </div>
+      <div class="row align-itens-start mt-2">
+        <div class="col-md-3">
+          <label style="color: black;">Nível de acesso:</label>
+          <input class="form-control" value="{{nivel}}" readonly/>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
